@@ -53,7 +53,7 @@ st.markdown(
     """
 )
 
-course = st.text_input("Enter the Course Name:", placeholder="e.g., NLP, IS Audit, Design Defect")
+course = st.text_input("Enter the Course Name:", placeholder="e.g., NLP, IS_Audit_And_Control, DesignDefect")
 if st.button("Find Best Teacher"):
     if course:
         best_teacher, skills, relevant_experiences, research_work, depart_domain, degrees, df = execute_queries(graph,course)
